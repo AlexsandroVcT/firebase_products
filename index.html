@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adicionar produto</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <h1>Adicionar produto</h1>
+    <form id="adicionar-produto-form">
+      <h2>Adicionar Produto</h2>
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div>
+        <label for="imagem">Imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept=".jpg,.jpeg,.png" required>
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+      <div>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" name="valor" required>
+      </div>
+      <button type="submit">Adicionar</button>
+      <div id="success-message"></div>
+      <div id="error-message"></div>
+    </form>
+    
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

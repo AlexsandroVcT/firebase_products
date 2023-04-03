@@ -1,0 +1,16 @@
+{
+  "name": "eletronicos_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.19.1",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3"
+  }
+}
